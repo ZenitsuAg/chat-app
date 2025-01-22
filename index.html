@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sue+Ellen+Francisco&display=swap" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+    <style type="text/tailwindcss">
+    @layer utilities {
+        .sent {
+            /* background-color: #3b82f6; */
+            /* color: white; */
+            padding: 10px;
+            border-radius: 30px;
+            width: fit-content;
+            max-width: 300px;
+        }
+
+        .received {
+            /* background-color: grey; */
+            padding: 10px;
+            border-radius: 30px;
+            width: fit-content;
+            margin-top: 5px;
+        }
+
+        .message {
+            max-width: 16rem;
+        }
+        .send-elem {
+            display: flex;
+            justify-content: right;
+            margin-top: 5px;
+        }
+
+        .receive-elem {
+            margin: 10px 0;
+        }
+
+        .sue {
+            font-family: "Sue Ellen Francisco", serif;
+            font-weight: 400;
+        }
+        
+        .roboto {
+            font-family: "Roboto", serif;
+        }
+
+        .montserrat{
+            font-family: "Montserrat", serif;
+        }
+
+    }
+
+      </style>
+    <title>Vite App</title>
+  </head>
+  <body class="flex items-center justify-center w-full h-full ">
+    <main class="">
+        <div class="container mb-5 w-[375px] shadow-lg shadow-grey-200 flex flex-col justify-between min-h-[100vh]">
+            <div class="flex justify-between p-5 text-center bg-gray-200 shadow-xl">
+                <svg fill="#3b82fd" height="35px" width="35px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_92_" d="M111.213,165.004L250.607,25.607c5.858-5.858,5.858-15.355,0-21.213c-5.858-5.858-15.355-5.858-21.213,0.001 l-150,150.004C76.58,157.211,75,161.026,75,165.004c0,3.979,1.581,7.794,4.394,10.607l150,149.996 C232.322,328.536,236.161,330,240,330s7.678-1.464,10.607-4.394c5.858-5.858,5.858-15.355,0-21.213L111.213,165.004z"></path> </g></svg>
+                <p class="text-2xl font-bold contact-name">Sarah</p>
+    
+                <div class="flex gap-4">
+                    <svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M3.51089 2L7.15002 2.13169C7.91653 2.15942 8.59676 2.64346 8.89053 3.3702L9.96656 6.03213C10.217 6.65159 10.1496 7.35837 9.78693 7.91634L8.40831 10.0375C9.22454 11.2096 11.4447 13.9558 13.7955 15.5633L15.5484 14.4845C15.9939 14.2103 16.5273 14.1289 17.0314 14.2581L20.5161 15.1517C21.4429 15.3894 22.0674 16.2782 21.9942 17.2552L21.7705 20.2385C21.6919 21.2854 20.8351 22.1069 19.818 21.9887C6.39245 20.4276 -1.48056 1.99997 3.51089 2Z" stroke="#3b82fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                    <svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#3b82fd"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16 10L18.5768 8.45392C19.3699 7.97803 19.7665 7.74009 20.0928 7.77051C20.3773 7.79703 20.6369 7.944 20.806 8.17433C21 8.43848 21 8.90095 21 9.8259V14.1741C21 15.099 21 15.5615 20.806 15.8257C20.6369 16.056 20.3773 16.203 20.0928 16.2295C19.7665 16.2599 19.3699 16.022 18.5768 15.5461L16 14M6.2 18H12.8C13.9201 18 14.4802 18 14.908 17.782C15.2843 17.5903 15.5903 17.2843 15.782 16.908C16 16.4802 16 15.9201 16 14.8V9.2C16 8.0799 16 7.51984 15.782 7.09202C15.5903 6.71569 15.2843 6.40973 14.908 6.21799C14.4802 6 13.9201 6 12.8 6H6.2C5.0799 6 4.51984 6 4.09202 6.21799C3.71569 6.40973 3.40973 6.71569 3.21799 7.09202C3 7.51984 3 8.07989 3 9.2V14.8C3 15.9201 3 16.4802 3.21799 16.908C3.40973 17.2843 3.71569 17.5903 4.09202 17.782C4.51984 18 5.07989 18 6.2 18Z" stroke="3b82fd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>                
+                </div>
+            </div>
+    
+            <div class="p-5 chat-container">
+    
+                <div id="chat-box" class="break-words chat-box text-wrap">
+    
+                </div>
+                <div class="flex items-center justify-between mt-5 border-2 rounded-2xl">
+                    <textarea
+                        class="w-full ml-2 resize-none border-xl focus-within:outline-none text-wrap" 
+                        type="text" id="message-input" placeholder="Message"></textarea>
+                    <!-- <button id="send-button">Send</button> -->
+                    <svg id="send-button" width="35px" height="35px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <title>Send message</title>
+                        <desc>Created with Sketch.</desc>
+                        <g id="🔍-Product-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="ic_fluent_send_28_filled" fill="#3b82f6" fill-rule="nonzero">
+                                <path d="M3.78963301,2.77233335 L24.8609339,12.8499121 C25.4837277,13.1477699 25.7471402,13.8941055 25.4492823,14.5168992 C25.326107,14.7744476 25.1184823,14.9820723 24.8609339,15.1052476 L3.78963301,25.1828263 C3.16683929,25.4806842 2.42050372,25.2172716 2.12264586,24.5944779 C1.99321184,24.3238431 1.96542524,24.015685 2.04435886,23.7262618 L4.15190935,15.9983421 C4.204709,15.8047375 4.36814355,15.6614577 4.56699265,15.634447 L14.7775879,14.2474874 C14.8655834,14.2349166 14.938494,14.177091 14.9721837,14.0981464 L14.9897199,14.0353553 C15.0064567,13.9181981 14.9390703,13.8084248 14.8334007,13.7671556 L14.7775879,13.7525126 L4.57894108,12.3655968 C4.38011873,12.3385589 4.21671819,12.1952832 4.16392965,12.0016992 L2.04435886,4.22889788 C1.8627142,3.56286745 2.25538645,2.87569101 2.92141688,2.69404635 C3.21084015,2.61511273 3.51899823,2.64289932 3.78963301,2.77233335 Z" id="🎨-Color">
+                    
+                    </path>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="p-3">
+            <p>Make some changes :>></p>
+            <p class="text-red-400">Be advised User, if anything doesn't go to plan or you want to clear the messages please refresh the page :)</p>
+            <div class="mb-3">
+                Name: <input type="text" name="name" id="name" placeholder="Change the name here" class="p-3 border-2 rounded-xl ">
+                <button class="p-3 rounded-lg contact-send bg-slate-400 hover:bg-slate-600 active:bg-slate-900 active:text-slate-300">Change contact name</button>
+            </div>
+            <hr>
+            <p>This button tells you the next action the system will take. Click on it to change it</p>
+            <button class="p-3 rounded-lg btn-order bg-slate-400 hover:bg-slate-600 active:bg-slate-900 active:text-slate-300">Send</button>
+
+            <h1 class="text-lg font-extrabold">Change theme color:</h1>
+            <p>These are the available colours:</p>
+                <p>slate gray, zinc, neutral, stone, red, orange, amber, yellow, lime, green, emerald, teal, cyan, sky, blue, indigo, violet, purple, fuchsia,
+                and pink</p> 
+
+            <div>
+                <div>
+                    <label>Sent theme colour: <input type="text" class="p-3 border-2 sent-theme rounded-xl"></label>
+                   <button class="p-3 rounded-lg sent-theme-btn btn-order bg-slate-400 hover:bg-slate-600 active:bg-slate-900 active:text-slate-300">Change</button>
+                </div>                
+                <div class="mt-3">
+                    <label for="">Sent text colour: <input type="text" class="p-3 border-2 sent-text rounded-xl"></label>
+                    <button class="p-3 rounded-lg sent-text-btn btn-order bg-slate-400 hover:bg-slate-600 active:bg-slate-900 active:text-slate-300">Change</button>
+                </div>
+            </div>
+            <div>
+                <div class="mt-5">
+                    <label>Received theme colour: <input type="text" class="p-3 border-2 received-theme rounded-xl"></label> 
+                    <button class="p-3 rounded-lg received-theme-btn btn-order bg-slate-400 hover:bg-slate-600 active:bg-slate-900 active:text-slate-300">Change</button>
+                </div>
+                <div class="mt-3">
+                    <label for="">Received text colour: <input type="text" class="p-3 border-2 received-text rounded-xl"></label>
+                    <button class="p-3 rounded-lg received-text-btn btn-order bg-slate-400 hover:bg-slate-600 active:bg-slate-900 active:text-slate-300">Change</button>
+                </div>
+            </div>
+
+            <hr class="mt-3">
+            <h1>The final aspect, select the font of your choice</h1>
+            <select name="" id="font-select" class="w-full p-3 shadow-lg">
+                <option value="roboto">Roboto</option>
+                <option value="montserrat">Montserrat</option>
+                <option value="sue">Sue Ellen Francisco</option>
+            </select>
+
+
+            
+        </div>
+        <p class="p-3 mt-10 text-2xl text-white bg-red-600 shadow-2xl">Dear user be advised, this service will be terminated on the 24th of January, 2025</p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
